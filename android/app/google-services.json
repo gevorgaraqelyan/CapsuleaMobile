@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "349280234307",
+    "project_id": "capsulea-c23ab",
+    "storage_bucket": "capsulea-c23ab.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349280234307:android:6ba6ce51c247060dbe5df6",
+        "android_client_info": {
+          "package_name": "com.example.capsulea_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349280234307-6s3jprvnuuql91qbkklms5rd88di8mvm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.capsulea_mobile",
+            "certificate_hash": "36eb1750f2a474d229466be3318b8be351c2a497"
+          }
+        },
+        {
+          "client_id": "349280234307-6l6mttmsdcothm1seoqa92303j72q9j1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5LlhU3F0kTBRxb6srKtWI6yD5LNorObk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349280234307-6l6mttmsdcothm1seoqa92303j72q9j1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
