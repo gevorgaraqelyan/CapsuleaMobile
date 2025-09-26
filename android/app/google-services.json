@@ -22,6 +22,14 @@
           }
         },
         {
+          "client_id": "349280234307-99ck06h4oljl67dlbjln6hfprjq8um37.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.capsulea_mobile",
+            "certificate_hash": "422a01def7d0c619c1d47b6fc2f2da0912733b47"
+          }
+        },
+        {
           "client_id": "349280234307-6l6mttmsdcothm1seoqa92303j72q9j1.apps.googleusercontent.com",
           "client_type": 3
         }

@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:capsulea_mobile/core/services/auth_service.dart';
 import 'package:capsulea_mobile/ui/pages/home_page.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +19,7 @@ class _LoginPageState extends State<LoginPage> {
 final _authService = AuthService();
 
 login() async {
-    var user =await _authService.loginWithGoogle();
+    var user = Platform.isAndroid?await _authService.loginWithGoogle():await _authService.loginWithApple();
     if (user != null) {
        setState(() {
       imageUrl = user.photoURL;
@@ -71,6 +73,7 @@ login() async {
               },
               child: Text('Login'),
             ),
+            if(Platform.isAndroid)
             ElevatedButton(
               onPressed: ()async {
                 await login();
@@ -79,6 +82,18 @@ login() async {
                 children: [
                   Text('Login with Google'),
                   FaIcon(FontAwesomeIcons.google),
+                ],
+              ),
+            ),
+            if(Platform.isIOS)
+            ElevatedButton(
+              onPressed: ()async {
+                await login();
+              },
+              child: Row(
+                children: [
+                  Text('Login with Apple'),
+                  FaIcon(FontAwesomeIcons.apple),
                 ],
               ),
             ),
